@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viewer</title>
+    <script type="module" src="./viewer.ts"></script>
+    <link rel="icon" href="https://fav.farm/🔥" />
+  </head>
+  <body>
+    <h2>viewer</h2>
+
+    <div class="player">
+      <media-controller>
+        <hls-video
+          src="./dbngin/master.m3u8"
+          slot="media"
+          crossorigin
+          muted
+        ></hls-video>
+        <media-rendition-menu hidden anchor="auto"></media-rendition-menu>
+
+        <media-loading-indicator
+          slot="centered-chrome"
+          noautohide
+        ></media-loading-indicator>
+        <media-control-bar>
+          <media-play-button></media-play-button>
+          <media-seek-backward-button></media-seek-backward-button>
+          <media-seek-forward-button></media-seek-forward-button>
+          <media-mute-button></media-mute-button>
+          <media-volume-range></media-volume-range>
+          <media-time-range></media-time-range>
+          <media-time-display showduration remaining></media-time-display>
+          <media-playback-rate-button></media-playback-rate-button>
+          <media-fullscreen-button></media-fullscreen-button>
+          <!-- <media-airplay-button></media-airplay-button> -->
+          <media-rendition-menu-button></media-rendition-menu-button>
+        </media-control-bar>
+      </media-controller>
+    </div>
+
+    <style>
+      .player {
+        aspect-ratio: 9/9;
+        width: 900px;
+        border: 1px solid #ccc;
+        media-controller {
+          width: 100%;
+        }
+      }
+    </style>
+  </body>
+</html>
