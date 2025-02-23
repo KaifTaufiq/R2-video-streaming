@@ -18,5 +18,8 @@
     "hls-video-element": "^1.2.7",
     "media-chrome": "^4.2.2",
     "vite": "^5.4.10"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
   }
 }

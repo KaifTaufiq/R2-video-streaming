@@ -9,8 +9,8 @@ type Preset = {
 }
 
 const presets: Preset[] = [
-  { resolution: 2160, bitrate: 15000 },
-  { resolution: 1440, bitrate: 10000 },
+  // { resolution: 2160, bitrate: 15000 },
+  // { resolution: 1440, bitrate: 10000 },
   { resolution: 1080, bitrate: 8000 },
   { resolution: 720, bitrate: 5000 },
   { resolution: 480, bitrate: 2500 },
